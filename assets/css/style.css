@@ -1,0 +1,42 @@
+@import url("card.css");
+@import url("cardInverso.css");
+@import url("responsividade.css");
+
+:root {
+    --azul_escuro: hsl(213, 19%, 18%);
+    --branco: hsl(0, 0%, 100%);
+    --cinza: hsl(216, 12%, 54%);
+    --cinza_claro: hsl(217, 12%, 63%);
+    --laranja: hsl(25, 97%, 53%);
+    --preto-azulado: hsl(216, 12%, 8%);
+    --cinza-opaco: hsla(216, 12%, 54%, 0.082);
+
+    --fonte: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--preto-azulado);
+    font-family: var(--fonte);
+}
+
+.card {
+    background-color: var(--azul_escuro);
+
+    border-radius: 25px;
+    
+    flex-direction: column;
+    display: flex;
+    row-gap: 1rem;
+
+    margin: 3rem 1rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.esconder {
+    display: none;
+}
+
+.avaliacaoSelecionada {
+    background-color: var(--laranja);
+    color: var(--branco);
+}

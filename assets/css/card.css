@@ -1,0 +1,73 @@
+.card__estrela {
+    background-color: var(--cinza-opaco);
+    background-image: url("../img/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    
+    border-radius: 100%;
+    
+    max-width: min-content;
+    padding: 1.2rem;
+}
+
+.card__titulo {
+    color: var(--branco);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card__descricao {
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+
+.card__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__container--btn {
+    background-color: var(--cinza-opaco);
+    
+    border: none;
+    border-radius: 100%;
+    
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 700;
+    
+    padding: .9rem 1.15rem;
+
+    transition: .3s;
+}
+
+.card__container--btn:hover {
+    background-color: var(--cinza);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.card__submit {
+    background-color: var(--laranja);
+    
+    border: none;
+    border-radius: 25px;
+    
+    color: var(--branco);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    padding: .8rem;
+
+    transition: .3s;
+}
+
+.card__submit:hover {
+    background-color: var(--branco);
+    color: var(--laranja);
+    cursor: pointer;
+}

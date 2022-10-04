@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+        <title>Frontend Mentor | Interactive rating component</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="card cardFrente">
+                <div class="card__estrela"></div>
+                <h2 class="card__titulo">How did we do?</h2>
+                <p class="card__descricao">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+                <div class="card__container">
+                    <button class="card__container--btn btn__avaliacao">1</button>
+                    <button class="card__container--btn btn__avaliacao">2</button>
+                    <button class="card__container--btn btn__avaliacao">3</button>
+                    <button class="card__container--btn btn__avaliacao">4</button>
+                    <button class="card__container--btn btn__avaliacao">5</button>
+                </div>
+
+                <button id="btn__submit" class="card__submit">Submit</button>
+            </section>
+
+            <section class="card cardVerso esconder">
+                <img src="assets/img/illustration-thank-you.svg" alt="Ilustração de agradecimento" class="cardVerso__imagem">
+                <h3 class="cardVerso__subtitulo">You selected out <span id="numero"></span> of 5</h3>
+                <h2 class="card__titulo">Thank you!</h2>
+                <p class="card__descricao cardVerso__descricao">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </section>        
+        </main>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
